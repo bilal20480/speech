@@ -8,9 +8,10 @@ import nltk
 import google.generativeai as genai
 import pandas as pd
 from datetime import datetime
+api_key=st.secrets["bilal_api"]
 
 # Configure Gemini API key
-genai.configure(api_key="AIzaSyBqx7s51Swc_l8jJILSjWjqyeNYvJXnFj0")  # 🔁 Replace with your actual API key
+genai.configure(api_key=api_key)  # 🔁 Replace with your actual API key
 
 # Download necessary NLTK resources
 nltk.download("punkt")
